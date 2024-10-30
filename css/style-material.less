@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+a
+{
+	font-family: "Roboto"; 
+	font-weight: 200;
+}
+
+body
+{
+	background-color: #eee;
+}
+
+#wpcontent {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#wpfooter {
+  bottom: 0;
+  box-sizing: border-box;
+  color: #555d66;
+  left: 0;
+  margin-left: 250px;
+  padding: 10px 20px;
+  position: relative;
+  right: 0;
+  width: 72%;
+}
+
+#collapse-menu
+{
+	display: none;
+}
+
+
+
+/* Welcome Screen in dashboard */
+.index-php
+{
+	.top-panel-stat {
+		 background: transparent none repeat scroll 0 0;
+		border: 1px solid transparent;
+		box-shadow: initial;
+		display: block;
+		float: left;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		width: 100%;
+	  
+	  a, a:hover
+	  {
+		color: white;
+	  }
+	  
+		> div {
+		    background-color: #e78585;
+			border: 1px solid black;
+			border-radius: 2px;
+			float: left;
+			height: 120px;
+			margin-right: 2%;
+			width: 23%;
+			position: relative;
+			text-transform: capitalize;
+			overflow: hidden;
+			box-sizing: border-box;
+			
+			&:hover::before
+			{
+				transform: ~"translate(20%, 20%) scale(0.7)";
+			}
+			
+			&::before
+			{
+				transform: ~"translate(0, 0)";
+				color: white;
+				font-family: fontawesome;
+				font-size: 60px;
+				position: absolute;
+				right: 10px;
+				top: 20px;
+				transition: all 0.4s ease 0s;
+			}
+			
+			&.post
+			{
+				border-color: #337ab7;
+				background-color: #337ab7;
+				color: #337ab7;
+					
+				&::before
+				{
+					content: "\f24d";
+				}
+			}
+			
+			
+			&.page
+			{
+				border-color: #5cb85c;
+				color: #5cb85c;
+				background-color: #5cb85c;
+				
+				&::before
+				{
+					content: "\f0f6";
+				}
+			}
+			
+			&.comments
+			{
+				border-color: #f0ad4e;
+				background-color: #f0ad4e;
+				color: #f0ad4e;
+				
+				&::before
+				{
+					content: "\f086";
+				}
+			}
+			
+			&.users
+			{
+				border-color: #d9534f;
+				background-color: #d9534f;
+				color: #d9534f;
+				
+				&::before
+				{
+					content: "\f007";
+				}
+			}
+			
+			:hover .panel_box_title {
+			  font-size: 35px;
+			}
+		}
+		
+		.panel_box_title {
+			display: flex;
+			flex-direction: column;
+			font-size: 20px;
+			height: ~"calc(100% - 35px)";
+			justify-content: center;
+			text-align: left;
+			transition: all 0.4s ease 0s;
+			position: relative;
+			z-index: 1;
+			text-indent: 20px;
+		}
+		
+		.draft, .publish, .approved, .moderated, .total {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			float: left;
+			height: 35px;
+			justify-content: center;
+			padding: 0 13px;
+			text-align: center;
+			width: 50%;
+			background-color: #f5f5f5;
+			color: black;
+		}
+		
+		.total {
+			width: 100%;
+		}
+	
+	}
+
+	.welcome-panel-close
+	{
+		display: none;
+	}
+	
+	#dashboard-widgets-wrap {
+	  display: block;
+	  width: 100%;
+	  
+	  .kalimah_system_info
+	  {
+		display: flex;
+		flex-direction: column;
+	  
+		  li 
+		  {
+				list-style: outside none none;
+				padding: 2px 5px;
+				
+				span:first-child
+				{
+					float: left;
+					width: 40%;
+				}
+				
+				span:nth-child(2)
+				{
+					float: left;
+					width: 60%;
+				}
+		  }
+	  }
+	  
+	}
+	
+	
+}
+
+.wrap 
+{
+	margin: 0;
+	
+	h1.wp-heading-inline
+	{
+		margin: 0;
+	}
+
+	.page-title-action, .page-title-action:active  {
+	  background: @thirdBgColor none repeat scroll 0 0;
+	  border: 0 none;
+	  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	  color: @thirdTextColor;
+	  padding: 6px 20px;
+	  position: absolute;
+	  right: 20px;
+	  top: ~"calc(96px / 2)";
+	  transform: translateY(-50%);
+	  transition: all 0.4s ease 0s;
+	  text-indent: 0;
+	  
+	  &:hover
+	  {
+		  background: darken(@thirdBgColor, 4%);
+	  }
+	}
+	
+	/* Top heading */
+	> h1 {
+		background-color: @secondBgColor;
+		box-sizing: border-box;
+		color: white;
+		font-size: 24px;
+		font-weight: 400;
+		height: 96px;
+		left: -20px;
+		line-height: 96px;
+		margin: 0 0 10px 0;
+		padding: 0;
+		position: relative;
+		text-indent: 20px;
+		top: 0;
+	    width: ~"calc(100% + 40px)";
+	}	
+}
+
+.postbox {
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.3), 0 0 2px 0 rgba(0, 0, 0, 0.15)
+}
+
+.postbox .hndle, .stuffbox .hndle {
+  background-color: #efefef;
+}
+
+
+.top_box {
+	background-color: @firstBgColor;
+	height: 220px;
+	left: 0;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+	
+
+	img
+	{
+		max-width: 200px;
+	}
+   a {
+	  bottom: 15px;
+	  left: ~"calc(220px / 2)";
+	  margin-bottom: 15px;
+	  position: absolute;
+	  transform: translateX(-50%);
+	  transition: all 0.4s;
+	}
+	
+	.toggle-sidemenu {
+	    bottom: 0;
+		cursor: pointer;
+		display: block;
+		height: 35px;
+		overflow: hidden;
+		position: absolute;
+		transform: translateY(50%);
+		transition: all 0.4s ease 0s;
+		width: 35px;
+	  
+	  &::before {
+		color: white;
+		content: "";
+		display: flex;
+		flex-direction: column;
+		font-family: dashicons;
+		font-size: 25px;
+		height: 100%;
+		justify-content: center;
+		position: absolute;
+		text-align: center;
+		text-shadow: 0 0 5px black;
+		top: 0px;
+		transition: all 0.4s ease 0s;
+		width: 100%;
+		}
+		
+		&.hide {
+		  width: 0;
+		}
+	}
+}
+
+
+#wpbody {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(85, 84, 84, 0.54);
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-left: 250px;
+  margin-top: -96px;
+  padding: 0 20px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  width: 72%;
+  z-index: 5;
+}
+
+
+#adminmenu .wp-submenu, #adminmenuwrap {
+  width: 250px;
+  background-color: initial;
+}
+
+
+.index-php .subsubsub
+{
+	left: 0;
+	width: auto;
+	
+	&::before
+	{
+		content: unset;
+	}
+}
+
+.subsubsub {
+  border-bottom: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  color: #666;
+  display: block;
+  font-size: 13px;
+  left: -20px;
+  list-style: outside none none;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding: 10px 0 10px 20px;
+  position: relative;
+  width: ~"calc(100% + 40px)";
+  z-index: 0;
+  
+  &::before {
+	  background-color: #dcdcdc;
+	  bottom: -1px;
+	  content: " ";
+	  height: 1px;
+	  left: 0;
+	  position: absolute;
+	  width: 100%;
+	}
+}
+
+
+/* Change screen settings and help */
+#contextual-help-link-wrap, #screen-options-link-wrap {
+  background-color: initial;
+  border: initial;
+  box-shadow: initial;
+  float: initial;
+  margin: 0 0 7px;
+  padding: 0;
+}
+	
+#screen-meta-links .show-settings
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+#screen-meta-links .show-settings {
+	  border: 0 none;
+	  border-radius: 3px;
+	  box-shadow: initial;
+	  color: transparent;
+	  font-size: 0;
+	  height: 100%;
+	  overflow: hidden;
+	  padding: 6px;
+	  text-shadow: initial;
+	  width: 100%;
+	  transition: all 0.4s;
+	  
+  &::after
+  {
+	color: white;
+	font-size: 15px;
+	height: 100%;
+	line-height: 20px;
+	text-align: center;
+	transition: all 0.4s ease 0s;
+	width: 100%;
+  }
+  
+  &:hover
+  {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	background-color: @thirdBgColor;
+	color: @thirdTextColor;
+  }
+  
+  &:hover::after
+  {
+	color: white;
+  }
+  
+  &#show-settings-link::after
+  {
+	content: "";
+  }
+  
+  &#contextual-help-link::after
+  {
+	content: "\f468";
+  }
+}
+	
+#screen-meta {
+  box-sizing: border-box;
+  left: -20px;
+  margin: 0;
+  width: ~"calc(100% + 40px)";
+  z-index: 3;
+}
+
+#screen-meta-links {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: ~"calc(96px / 2)";
+  transform: translate(125%, -50%);
+  z-index: 5;
+}
+
+/* Side Bar*/
+#adminmenumain
+	{
+		position: relative;
+		z-index: 1;
+		
+	#adminmenuwrap {
+	  background-color: transparent;
+	  box-sizing: border-box;
+	  padding: 0px;
+	  width: 250px;
+	  left: 0;
+	  transition: all 0.3s;
+	  position: relative !important;
+	}
+
+	#adminmenuback {
+	  display: none;
+	}
+
+	#adminmenu {
+		background-color: #eee;
+		box-sizing: border-box;
+		margin-top: 220px;
+		padding: 10px 0 0;
+		position: relative;
+		width: 100%;
+	  
+	   div.wp-menu-name {
+		  padding: 8px 0;
+		  position: relative;
+		}
+		
+		div.wp-menu-image::before {
+		  color: @secondTextColor;
+		  transition: all 0.5s ease 0s;
+		}
+  
+		li {
+			transition: all 0.4s;
+		
+			.awaiting-mod, .update-plugins {
+			  background-color: #d67622;
+			  border-radius: 50%;
+			  color: white;
+			  float: right;
+			  left: ~"calc(36px / 2)";
+			  margin: 0;
+			  position: absolute;
+			  top: 0;
+			  
+			  span
+			  {
+				  display: flex;
+				  flex-direction: column;
+				  height: 15px;
+				  justify-content: center;
+				  left: 0;
+				  padding: 0;
+				  text-align: center;
+				  width: 15px; 
+			  }
+			}
+		}
+
+		a, .wp-submenu a, #collapse-button {
+		  color: @secondTextColor;
+		  padding: 0 20px;
+		  transition: all 0.4s;
+		}
+
+		.menu-top:hover
+		{
+			background-color: lighten(@thirdBgColor, 25%);
+		}
+			
+		.wp-has-current-submenu .wp-submenu li {
+			&:hover
+			{
+				background-color: darken(@firstBgColor, 15%);
+			}
+		}
+		
+		li.wp-has-submenu.wp-not-current-submenu:hover::after,
+		a.wp-has-current-submenu::after,
+		> li.current > a.current::after {
+			content: unset;
+		}
+
+		.wp-menu-separator {
+		  background-color: #dadada;
+		  border-bottom: 1px solid #f6f6f6;
+		  cursor: inherit;
+		  height: 1px;
+		  margin: 8px 0;
+		}
+
+		.wp-submenu li {
+			position: relative;
+			margin: 2px 0;
+			
+			&::before {
+			  background-color: @firstBgColor;
+			  content: " ";
+			  height: 0;
+			  left: 5px;
+			  position: absolute;
+			  top: 50%;
+			  transform: translateY(-50%);
+			  transition: all 0.3s ease-in-out 0s;
+			  width: 2px;
+			}
+			
+			&:hover
+			{
+				background-color: transparent;
+				border-radius: 2px;
+			}
+			
+			&:hover::before {
+			  height: 65%;
+			}
+		}
+		
+		.wp-submenu a:focus, .wp-submenu a:hover, a:hover, li.menu-top > a:focus {
+		  color: @secondTextColor;
+		}
+
+		li.menu-top:hover > a {
+		  background-color: lighten(@thirdBgColor, 25%);
+		  color: @secondTextColor;
+		}
+		
+		li.opensub > a.menu-top {
+		  background-color: transparent;
+		  color: @secondTextColor;
+		}
+		
+		li.menu-top:hover {
+		  background-color: transparent;
+		}
+		
+		li > a.menu-top:focus {
+		  background-color: initial;
+		}
+
+		.wp-has-current-submenu .wp-submenu, .wp-has-current-submenu .wp-submenu.sub-open, .wp-has-current-submenu.opensub .wp-submenu, a.wp-has-current-submenu:focus + .wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu {
+		  background-color: transparent;
+		}
+
+		.wp-has-current-submenu .wp-submenu .wp-submenu-head, .wp-menu-arrow, .wp-menu-arrow div, li.current a.menu-top, li.wp-has-current-submenu a.wp-has-current-submenu {
+		  background: lighten(@thirdBgColor, 25%) none repeat scroll 0 0;
+		  color: @secondTextColor;
+		}
+
+		li.wp-has-submenu.wp-not-current-submenu.opensub:hover::after {
+		  border-right-color: #0073aa;
+		}
+
+		.awaiting-mod, .update-plugins {
+		  background-color: #d67622;
+		  border-radius: 3px;
+		  color: white;
+		  float: right;
+		  margin: 1px 10px 0 2px;
+		}
+ 
+		li.wp-menu-separator {
+		  background-color: white;
+		  cursor: inherit;
+		  height: 1px;
+		  margin: 8px 0;
+		}
+		
+		li.menu-top {
+		  overflow: hidden; 
+		  width: 100%;
+		  margin: 5px 0;
+		}
+		
+		/** Sidebar Sub menu */
+		.wp-submenu {
+		  box-shadow: initial;
+		  height: 0;
+		  left: 0;
+		  overflow: hidden;
+		  padding: 0 !important;
+		  position: relative;
+		  top: 0;
+		  display: none;
+		  
+		  a {
+			padding: 5px 30px;  
+		  }
+		}
+
+		.wp-has-current-submenu .wp-submenu
+		{
+			height: auto;
+			display: block;
+			
+			li:hover
+			{
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus, #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover, #wpadminbar li #adminbarsearch.adminbar-focused::before, #wpadminbar li .ab-item:focus .ab-icon::before, #wpadminbar li .ab-item:focus::before, #wpadminbar li a:focus .ab-icon::before, #wpadminbar li.hover .ab-icon::before, #wpadminbar li.hover .ab-item::before, #wpadminbar li:hover #adminbarsearch::before, #wpadminbar li:hover .ab-icon::before, #wpadminbar li:hover .ab-item::before, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,#wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label, #wpadminbar > #wp-toolbar li.hover span.ab-label {
+  color: @thirdTextColor;
+}
+
+/* Top Bar */
+.multisite #wpadminbar
+{
+	padding: 10px 20px 10px 55px ;
+}
+
+#wpadminbar
+{
+	background-color: @firstBgColor;
+	box-sizing: border-box;
+	height: 50px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	
+	
+	 #wp-admin-bar-my-account.with-avatar > a img
+	  {
+		height: auto;
+		margin: -4px 6px 0 0;
+		width: 26px;
+	  }
+	a {
+		color: @secondTextColor;
+	}
+		
+	.ab-top-secondary {
+	  display: flex;
+	}
+	
+	/* Top links */
+	#wp-admin-bar-root-default > li,
+	#wp-admin-bar-top-secondary > li,
+	
+	{
+		margin: 0 5px;
+	}
+	
+	#wp-admin-bar-root-default > li a,
+	#wp-admin-bar-top-secondary > li a
+	{
+		transition: all 0.4s;
+		border-radius: 5px;
+	}
+	
+	#wp-admin-bar-top-secondary > li .ab-item::after {
+		background-color: @thirdBgColor;
+		border-radius: 5px;
+		color: @thirdTextColor;
+		content: attr(title);
+		font-size: 12px;
+		height: auto;
+		left: 50%;
+		opacity: 0;
+		padding: 0 16px;
+		position: absolute;
+		text-align: center;
+		top: -9000px;
+		transform: translate(-50%, 5px);
+		transition: opacity 0.4s ease 0s, transform 0.4s;
+	}
+
+	 #wp-admin-bar-top-secondary > li .ab-item:hover::after
+	  {
+		opacity: 1;
+		transform: translate(-50%, -5px);
+		top: calc(100% + 25px);
+	  }
+	  
+	
+	.ab-label, .ab-item
+	{
+		font-size: 14px;
+	}
+	
+	#wp-admin-bar-root-default > li:hover > a, #wp-admin-bar-root-default > li.hover > a,
+	#wp-admin-bar-top-secondary > li:hover > a, #wp-admin-bar-top-secondary > li.hover > a
+	
+	{
+		background-color: @thirdBgColor;
+		color: @thirdTextColor;
+	}
+	
+	#wp-admin-bar-kalimah-logout a, #wp-admin-bar-kalimah-settings a{
+		width: 35px;
+		
+		&::before
+		{
+			color: white;
+			font-family: fontawesome;
+			font-size: 20px;
+			height: 100%;
+			left: 0;
+			line-height: 25px;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 100%;
+		}
+	}
+	
+	#wp-admin-bar-kalimah-logout a::before {
+	  content: "\f08b";
+	}
+
+	#wp-admin-bar-kalimah-settings a::before {
+		content: "\f013";
+	}
+
+	#wp-admin-bar-user-info .display-name, #wp-admin-bar-user-info .username {
+	  display: flex;
+	  flex-direction: column;
+	  height: 100%;
+	  justify-content: center;
+	}
+
+	#wp-admin-bar-user-info .avatar {
+	 border-radius: 3px;
+		height: 30px;
+		left: 0;
+		margin-right: 10px;
+		position: relative;
+		top: 0;
+		width: auto;
+	}
+	
+	/** Submenu */
+	#wp-admin-bar-root-default > li > .ab-sub-wrapper {
+	    border-radius: 2px;
+		left: 50%;
+		min-width: 100%;
+		opacity: 0;
+		top: -900px;
+		transform: translateX(-50%);
+		transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+		opacity: 0;
+		display: block;
+		background-color: @thirdBgColor;
+		color: @thirdTextColor;
+		
+		li
+		{
+			transition: all 0.4s;
+		}
+		
+		li:hover > a
+		{
+			background-color: lighten(@thirdBgColor, 4%);
+			color: @thirdTextColor;
+		}
+		
+		.ab-submenu
+		{
+			background-color: @thirdBgColor;
+			color: @thirdTextColor;
+			padding: 5px;
+			margin-left: 0;
+		}
+	}
+
+	ul#wp-admin-bar-root-default > li.menupop.hover {
+		> .ab-sub-wrapper
+		{
+			top: 55px;
+			opacity: 1;
+			transform: translate(-50%, -13px);
+		}
+	}
+
+	li#wp-admin-bar-menu-toggle {
+		display: none;
+	}
+	
+	#wp-admin-bar-updates .screen-reader-text,
+	#wp-admin-bar-comments .screen-reader-text {
+	  background-color: @thirdBgColor;
+	  color: @thirdTextColor;
+	  border-radius: 6px;
+	  clip: initial;
+	  display: table;
+	  font-size: 12px;
+	  height: auto;
+	  left: 50%;
+	  overflow: initial;
+	  padding: 5px 10px;
+	  position: absolute;
+	  top: -1000px;
+	  transform: ~"translate(-50%, 15px)";
+	  text-align: center;
+	  transition: opacity 0.4s, transform 0.4s;
+	  opacity: 0;
+	  white-space: nowrap;
+	}
+	
+	#wp-admin-bar-updates a:hover .screen-reader-text,
+	#wp-admin-bar-comments a:hover .screen-reader-text {
+		 top: 100%;
+		 opacity: 1;
+		 transform: ~"translate(-50%, 5px)";
+	}
+}
+
+/* Button */
+.wp-core-ui .button {
+  .button(@thirdBgColor; @thirdTextColor);
+  height: auto;
+}
+
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+  padding: 3px 35px;
+  height: auto;
+}
+
+.wp-core-ui .button-secondary {
+    height: auto;
+  .button(@thirdBgColor; @thirdTextColor);
+}
+
+.wp-core-ui .button-primary {
+  .button(@thirdBgColor; @thirdTextColor);
+  text-shadow: initial;
+}
+
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary.active:hover,
+.wp-core-ui .button-primary:active {
+ .button(lighten(@thirdBgColor, 5%); @thirdTextColor);
+}
+
+
+.wp-admin .button-cancel
+{
+	.button(#e74c3c; #fff);
+	  border-radius: 3px;
+	  line-height: 2;
+	  padding: 4px 10px;
+	  text-decoration: initial;
+
+}
+
+/* Table */
+.wrap table.fixed, .wrap .wp-list-table {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  box-sizing: border-box;
+  margin: 15px 0;
+  table-layout: fixed;
+}
+
+/* Hide side menu and expand main content */
+.folded {
+	#adminmenumain #adminmenuwrap {
+	  left: -250px;
+	  position: absolute !important;
+	}
+	
+	#adminmenu div.wp-menu-image {
+	  position: initial;
+	}
+	
+	#adminmenu .wp-menu-name {
+	  left: 0;
+	  position: initial;
+	}
+	
+	#adminmenu .wp-submenu-head {
+		display: none;
+	}
+	
+	#wpcontent, #wpfooter
+	{
+		margin: 0;
+		position: relative;
+	}
+	
+	#wpbody {
+	  margin-left: 125px;
+	  width: 85%;
+	}
+	
+	.top_box a
+	{
+		transform: initial;
+		left: 20px;
+	}
+	
+	.toggle-sidemenu::before {
+		transform: rotate(180deg);
+		top: 0px !important;
+	}
+	
+	#adminmenu li.current.menu-top, #adminmenu li.wp-has-current-submenu
+	{
+		background-color: unset;
+	}
+}
+
+/* Funtions (Mixins) */
+.button(@bg; @color) {
+ background: @bg none repeat scroll 0 0;
+  border: 0 none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  color: @color;
+  padding: 0px 20px;
+  transition: all 0.4s ease 0s;
+  text-indent: 0;
+  
+  &:hover
+  {
+	  background: darken(@bg, 10%);
+	  color: lighten(@color, 10%);
+  }
+  
+  span, span::before
+  {
+	color: lighten(@color, 10%);
+	text-shadow: 0 1px 2px darken(@bg, 40%);
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

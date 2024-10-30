@@ -1,0 +1,178 @@
+#kalimah-admin-settings .flat_colors label {
+  display: block;
+  float: left;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+#kalimah-admin-settings .flat_colors input[type="radio"] {
+  display: none;
+}
+#kalimah-admin-settings .flat_colors label::before {
+  opacity: 0;
+  transition: 0.3s;
+  bottom: 0;
+  color: white;
+  content: "";
+  font-family: fontawesome;
+  font-size: 27px;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#kalimah-admin-settings .flat_colors input[type="radio"]:checked + label::before {
+  opacity: 1;
+}
+#kalimah-admin-settings .flat_colors .first_color {
+  background-color: #16a085;
+}
+#kalimah-admin-settings .flat_colors .second_color {
+  background-color: #2980b9;
+}
+#kalimah-admin-settings .flat_colors .third_color {
+  background-color: #8e44ad;
+}
+#kalimah-admin-settings .flat_colors .fourth_color {
+  background-color: #263849;
+}
+#kalimah-admin-settings .flat_colors .fifth_color {
+  background-color: #da751c;
+}
+#kalimah-admin-settings .material_colors label {
+  display: block;
+  float: left;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+#kalimah-admin-settings .material_colors input[type="radio"] {
+  display: none;
+}
+#kalimah-admin-settings .material_colors label::before {
+  opacity: 0;
+  transition: 0.3s;
+  bottom: 0;
+  color: white;
+  content: "";
+  font-family: fontawesome;
+  font-size: 27px;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#kalimah-admin-settings .material_colors input[type="radio"]:checked + label::before {
+  opacity: 1;
+}
+#kalimah-admin-settings .material_colors .first_color {
+  background-color: #607D8B;
+}
+#kalimah-admin-settings .material_colors .second_color {
+  background-color: #FF9800;
+}
+#kalimah-admin-settings .material_colors .third_color {
+  background-color: #009688;
+}
+#kalimah-admin-settings .material_colors .fourth_color {
+  background-color: #CDDC39;
+}
+#kalimah-admin-settings .material_colors .fifth_color {
+  background-color: #673AB7;
+}
+#kalimah-admin-settings .material_colors .sixth_color {
+  background-color: #795548;
+}
+#kalimah-admin-settings .upload_image {
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+  float: left;
+  width: 250px;
+  height: 150px;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 100%;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div {
+  cursor: pointer;
+  float: left;
+  height: 50%;
+  position: relative;
+  width: 100%;
+  background-color: #D5D5D5;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div:hover {
+  background-color: #afafaf;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div::before {
+  display: flex;
+  flex-direction: column;
+  font-family: dashicons;
+  font-size: 25px;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div.kalimah_admin_upload_action {
+  border-bottom: 1px solid gray;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div.kalimah_admin_upload_action::before {
+  content: "\f317";
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div.kalimah_admin_delete_action {
+  background-color: #ff7373;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div.kalimah_admin_delete_action:hover {
+  background-color: #ff4040;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_upload_actions div.kalimah_admin_delete_action::before {
+  content: "\f182";
+  color: #ffffff;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_image_wrapper {
+  background-color: #eee;
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  font-size: 40px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% - 50px);
+  position: relative;
+  box-sizing: border-box;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_image_wrapper span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+#kalimah-admin-settings .upload_image .kalimah_admin_image_wrapper img {
+  z-index: 3;
+}

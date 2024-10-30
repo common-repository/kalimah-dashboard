@@ -1,0 +1,2041 @@
+/* General */
+/* Left Colmn (Add category, tags, custom tax .. etc)*/
+/* Dashboard Widgets */
+/*Pagination*/
+/* Welcome Screen in dashboard */
+/* Manage various aspects of core wordpress elements*/
+/* Editor page */
+/* Search box */
+/* Table Display */
+/* Button */
+/* Settings */
+/* Menu section */
+/* Widgets */
+/* Side Bar*/
+/* Post */
+/* Notifcations boxes*/
+/* Top Bar */
+/* User profile photo and links */
+/* Change screen settings and help */
+/* Funtions (Mixins) */
+.wrap h1.wp-heading-inline {
+  clear: both;
+  font-size: 30px;
+  line-height: 1;
+  padding: 10px 0px;
+}
+.wrap .wp-heading-inline + .page-title-action {
+  transition: all 0.3s ease 0s;
+}
+.wrap {
+  padding: 10px;
+  margin: 25px 20px 0 2px;
+}
+.tablenav {
+  margin: 15px 0;
+}
+.postbox {
+  box-shadow: 0 1px 3px 0px rgba(0,0,0,0.3), 0 0 2px 0 rgba(0,0,0,0.15);
+}
+.postbox .hndle,
+.stuffbox .hndle {
+  background-color: #efefef;
+}
+#wpbody-content {
+  box-sizing: border-box;
+  padding: 0 30px;
+  width: 100%;
+}
+#wpcontent {
+  transition: all 0.4s ease 0s;
+}
+#wpfooter {
+  position: relative;
+  padding: 10px 60px;
+  transition: all 0.4s;
+}
+#col-left {
+  width: 34%;
+  padding-top: 50px;
+}
+#col-left .col-wrap {
+  padding: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#col-left form {
+  padding: 15px;
+  background-color: white;
+}
+.col-wrap h2 {
+  margin: 0;
+  padding: 12px;
+  background-color: #7b96a3;
+  color: white;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+.wrap > h1 {
+  font-size: 32px;
+}
+.col-wrap p.submit {
+  text-align: center;
+}
+.form-field input[type="text"],
+.form-field input[type="password"],
+.form-field input[type="email"],
+.form-field input[type="number"],
+.form-field input[type="search"],
+.form-field input[type="tel"],
+.form-field input[type="url"],
+.form-field textarea {
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+}
+#dashboard-widgets .postbox-container > div > div {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#dashboard-widgets h2.hndle {
+  background-color: #f5f5f5;
+}
+.tablenav .one-page .displaying-num {
+  margin-top: 0px;
+}
+.tablenav .tablenav-pages {
+  border: 1px solid #7b96a3;
+  height: 30px;
+  margin: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.tablenav .displaying-num {
+  background-color: #7b96a3;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  margin-right: 0;
+  min-height: 100%;
+  padding: 0 7px;
+}
+.pagination-links > span,
+.pagination-links > a {
+  float: left;
+}
+.tablenav-pages-navspan {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 0 none;
+  color: #a0a5aa;
+  font-size: 20px;
+  height: 30px;
+  line-height: 25px;
+  padding: 0;
+  width: 30px;
+  display: none;
+}
+.tablenav .tablenav-pages a,
+.tablenav-pages-navspan {
+  background: initial;
+  border: initial;
+  font-size: 20px;
+  height: 30px;
+  line-height: 25px;
+  padding: 0;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 30px;
+}
+.tablenav .tablenav-pages a:hover,
+.tablenav-pages-navspan:hover {
+  background-color: #7b96a3;
+}
+.tablenav .tablenav-pages .paging-input {
+  height: 30px;
+  line-height: 27px;
+}
+.tablenav .tablenav-pages .tablenav-paging-text {
+  font-size: 13px;
+  padding-right: 10px;
+}
+.tablenav-pages .current-page {
+  border: initial;
+  box-shadow: 0 0 2px #bcbcbc inset;
+  height: 30px;
+  transition: all 0.3s ease 0s;
+}
+#the-comment-list .approve a,
+#the-comment-list .unapprove a {
+  color: transparent;
+}
+.index-php .top-panel-stat {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid transparent;
+  box-shadow: initial;
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+.index-php .top-panel-stat a,
+.index-php .top-panel-stat a:hover {
+  color: white;
+}
+.index-php .top-panel-stat > div {
+  background-color: #e78585;
+  border: 1px solid black;
+  border-radius: 2px;
+  float: left;
+  height: 120px;
+  margin-right: 2%;
+  width: 23%;
+  position: relative;
+  text-transform: capitalize;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.index-php .top-panel-stat > div:hover::before {
+  transform: translate(20%, 20%) scale(0.7);
+}
+.index-php .top-panel-stat > div::before {
+  transform: translate(0, 0);
+  color: white;
+  font-family: fontawesome;
+  font-size: 60px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  transition: all 0.4s ease 0s;
+}
+.index-php .top-panel-stat > div.post {
+  border-color: #337ab7;
+  background-color: #337ab7;
+  color: #337ab7;
+}
+.index-php .top-panel-stat > div.post::before {
+  content: "\f24d";
+}
+.index-php .top-panel-stat > div.page {
+  border-color: #5cb85c;
+  color: #5cb85c;
+  background-color: #5cb85c;
+}
+.index-php .top-panel-stat > div.page::before {
+  content: "\f0f6";
+}
+.index-php .top-panel-stat > div.comments {
+  border-color: #f0ad4e;
+  background-color: #f0ad4e;
+  color: #f0ad4e;
+}
+.index-php .top-panel-stat > div.comments::before {
+  content: "\f086";
+}
+.index-php .top-panel-stat > div.users {
+  border-color: #d9534f;
+  background-color: #d9534f;
+  color: #d9534f;
+}
+.index-php .top-panel-stat > div.users::before {
+  content: "\f007";
+}
+.index-php .top-panel-stat > div :hover .panel_box_title {
+  font-size: 35px;
+}
+.index-php .top-panel-stat .panel_box_title {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  height: calc(100% - 35px);
+  justify-content: center;
+  text-align: left;
+  transition: all 0.4s ease 0s;
+  position: relative;
+  z-index: 1;
+  text-indent: 20px;
+}
+.index-php .top-panel-stat .draft,
+.index-php .top-panel-stat .publish,
+.index-php .top-panel-stat .approved,
+.index-php .top-panel-stat .moderated,
+.index-php .top-panel-stat .total {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 35px;
+  justify-content: center;
+  padding: 0 13px;
+  text-align: center;
+  width: 50%;
+  background-color: #f5f5f5;
+  color: black;
+}
+.index-php .top-panel-stat .total {
+  width: 100%;
+}
+.index-php .welcome-panel-close {
+  display: none;
+}
+.index-php #dashboard-widgets-wrap {
+  display: block;
+  width: 100%;
+}
+.index-php #dashboard-widgets-wrap .kalimah_system_info {
+  display: flex;
+  flex-direction: column;
+}
+.index-php #dashboard-widgets-wrap .kalimah_system_info li {
+  list-style: outside none none;
+  padding: 2px 5px;
+}
+.index-php #dashboard-widgets-wrap .kalimah_system_info li span:first-child {
+  float: left;
+  width: 40%;
+}
+.index-php #dashboard-widgets-wrap .kalimah_system_info li span:nth-child(2) {
+  float: left;
+  width: 60%;
+}
+.edit-php .subsubsub,
+.edit-comments-php .subsubsub,
+.plugins-php .subsubsub,
+.users-php .subsubsub,
+.upload-php .subsubsub {
+  margin: 10px 15px 0;
+  position: relative;
+  top: 1px;
+  z-index: 1;
+}
+.edit-php .subsubsub li,
+.edit-comments-php .subsubsub li,
+.plugins-php .subsubsub li,
+.users-php .subsubsub li,
+.upload-php .subsubsub li {
+  color: transparent;
+  margin-right: 2px;
+  float: left;
+}
+.edit-php .subsubsub li a,
+.edit-comments-php .subsubsub li a,
+.plugins-php .subsubsub li a,
+.users-php .subsubsub li a,
+.upload-php .subsubsub li a {
+  background-color: #7b96a3;
+  border: 2px solid #7b96a3;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  padding: 4px 10px;
+  float: left;
+  transition: all 0.4s;
+}
+.edit-php .subsubsub li a:not(.current):hover,
+.edit-comments-php .subsubsub li a:not(.current):hover,
+.plugins-php .subsubsub li a:not(.current):hover,
+.users-php .subsubsub li a:not(.current):hover,
+.upload-php .subsubsub li a:not(.current):hover {
+  background-color: #b7c6cd;
+  border-color: #b7c6cd;
+}
+.edit-php .subsubsub a .count,
+.edit-php .subsubsub a.current .count,
+.edit-comments-php .subsubsub a .count,
+.edit-comments-php .subsubsub a.current .count,
+.plugins-php .subsubsub a .count,
+.plugins-php .subsubsub a.current .count,
+.users-php .subsubsub a .count,
+.users-php .subsubsub a.current .count,
+.upload-php .subsubsub a .count,
+.upload-php .subsubsub a.current .count {
+  color: #0d1012;
+  padding: 0 4px;
+}
+.edit-php .subsubsub a.current,
+.edit-comments-php .subsubsub a.current,
+.plugins-php .subsubsub a.current,
+.users-php .subsubsub a.current,
+.upload-php .subsubsub a.current {
+  border: 2px solid #7b96a3;
+  transition: all 0.3s;
+  background-color: white;
+  color: #212c31;
+  font-weight: bold;
+  position: relative;
+}
+.edit-php .subsubsub a.current::after,
+.edit-comments-php .subsubsub a.current::after,
+.plugins-php .subsubsub a.current::after,
+.users-php .subsubsub a.current::after,
+.upload-php .subsubsub a.current::after {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -5px;
+  height: 10px;
+  content: "";
+}
+.edit-php .subsubsub a.current .count,
+.edit-comments-php .subsubsub a.current .count,
+.plugins-php .subsubsub a.current .count,
+.users-php .subsubsub a.current .count,
+.upload-php .subsubsub a.current .count {
+  color: #212c31;
+  font-weight: bold;
+}
+.edit-php .subsubsub a:hover,
+.edit-comments-php .subsubsub a:hover,
+.plugins-php .subsubsub a:hover,
+.users-php .subsubsub a:hover,
+.upload-php .subsubsub a:hover {
+  opacity: 1;
+}
+.edit-php .subsubsub a,
+.edit-php .widefat a,
+.edit-php .wp-filter a,
+.edit-php .widefat tbody td,
+.edit-php .widefat tobdy th,
+.edit-comments-php .subsubsub a,
+.edit-comments-php .widefat a,
+.edit-comments-php .wp-filter a,
+.edit-comments-php .widefat tbody td,
+.edit-comments-php .widefat tobdy th,
+.plugins-php .subsubsub a,
+.plugins-php .widefat a,
+.plugins-php .wp-filter a,
+.plugins-php .widefat tbody td,
+.plugins-php .widefat tobdy th,
+.users-php .subsubsub a,
+.users-php .widefat a,
+.users-php .wp-filter a,
+.users-php .widefat tbody td,
+.users-php .widefat tobdy th,
+.upload-php .subsubsub a,
+.upload-php .widefat a,
+.upload-php .wp-filter a,
+.upload-php .widefat tbody td,
+.upload-php .widefat tobdy th {
+  font-size: 14px;
+}
+.edit-php .subsubsub ~ form:not(.search-form),
+.edit-comments-php .subsubsub ~ form:not(.search-form),
+.plugins-php .subsubsub ~ form:not(.search-form),
+.users-php .subsubsub ~ form:not(.search-form),
+.upload-php .subsubsub ~ form:not(.search-form) {
+  float: left;
+  padding: 0 15px;
+  background-color: white;
+  width: 100%;
+  border-top: 2px solid #7b96a3;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+}
+.edit-php tr .column-primary,
+.edit-comments-php tr .column-primary,
+.plugins-php tr .column-primary,
+.users-php tr .column-primary,
+.upload-php tr .column-primary {
+  position: relative;
+}
+.edit-php tr .plugin-title,
+.edit-comments-php tr .plugin-title,
+.plugins-php tr .plugin-title,
+.users-php tr .plugin-title,
+.upload-php tr .plugin-title {
+  min-width: 280px;
+}
+.edit-php tr:hover .row-actions,
+.edit-comments-php tr:hover .row-actions,
+.plugins-php tr:hover .row-actions,
+.users-php tr:hover .row-actions,
+.upload-php tr:hover .row-actions {
+  opacity: 1;
+}
+.edit-php .row-actions,
+.edit-comments-php .row-actions,
+.plugins-php .row-actions,
+.users-php .row-actions,
+.upload-php .row-actions {
+  align-items: center;
+  background-color: rgba(255,255,255,0.87);
+  display: flex;
+  bottom: 1px;
+  justify-content: center;
+  left: 0;
+  position: absolute !important;
+  text-align: center;
+  top: 1px;
+  transition: opacity 0.3s ease 0s;
+  vertical-align: middle;
+  width: 100%;
+  opacity: 0;
+}
+.edit-php .row-actions span,
+.edit-php .row-actions a,
+.edit-php .row-actions span.trash a,
+.edit-php .row-actions span.delete a,
+.edit-php .row-actions span.delete a:hover,
+.edit-php .row-actions span.trash a:hover,
+.edit-php .row-actions span.spam a,
+.edit-php .row-actions span.unapprove a,
+.edit-comments-php .row-actions span,
+.edit-comments-php .row-actions a,
+.edit-comments-php .row-actions span.trash a,
+.edit-comments-php .row-actions span.delete a,
+.edit-comments-php .row-actions span.delete a:hover,
+.edit-comments-php .row-actions span.trash a:hover,
+.edit-comments-php .row-actions span.spam a,
+.edit-comments-php .row-actions span.unapprove a,
+.plugins-php .row-actions span,
+.plugins-php .row-actions a,
+.plugins-php .row-actions span.trash a,
+.plugins-php .row-actions span.delete a,
+.plugins-php .row-actions span.delete a:hover,
+.plugins-php .row-actions span.trash a:hover,
+.plugins-php .row-actions span.spam a,
+.plugins-php .row-actions span.unapprove a,
+.users-php .row-actions span,
+.users-php .row-actions a,
+.users-php .row-actions span.trash a,
+.users-php .row-actions span.delete a,
+.users-php .row-actions span.delete a:hover,
+.users-php .row-actions span.trash a:hover,
+.users-php .row-actions span.spam a,
+.users-php .row-actions span.unapprove a,
+.upload-php .row-actions span,
+.upload-php .row-actions a,
+.upload-php .row-actions span.trash a,
+.upload-php .row-actions span.delete a,
+.upload-php .row-actions span.delete a:hover,
+.upload-php .row-actions span.trash a:hover,
+.upload-php .row-actions span.spam a,
+.upload-php .row-actions span.unapprove a {
+  color: transparent;
+  float: left;
+  position: relative;
+  overflow-wrap: initial;
+}
+.edit-php .row-actions a,
+.edit-comments-php .row-actions a,
+.plugins-php .row-actions a,
+.users-php .row-actions a,
+.upload-php .row-actions a {
+  background-color: white;
+  border: 1px solid #00a0d2;
+  border-radius: 5px;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  line-height: 35px;
+  margin: 0 5px;
+  width: 35px;
+  transition: all 0.3s;
+}
+.edit-php .row-actions a::after,
+.edit-comments-php .row-actions a::after,
+.plugins-php .row-actions a::after,
+.users-php .row-actions a::after,
+.upload-php .row-actions a::after {
+  background-color: #99aeb8;
+  border-radius: 5px;
+  color: #fff;
+  content: attr(aria-label);
+  font-size: 12px;
+  height: auto;
+  left: 50%;
+  opacity: 0;
+  padding: 0 16px;
+  position: absolute;
+  text-align: center;
+  top: -9000px;
+  transform: translate(-50%, 5px);
+  transition: opacity 0.4s ease 0s, transform 0.4s;
+  white-space: nowrap;
+}
+.edit-php .row-actions a:hover,
+.edit-comments-php .row-actions a:hover,
+.plugins-php .row-actions a:hover,
+.users-php .row-actions a:hover,
+.upload-php .row-actions a:hover {
+  background-color: #02465C;
+}
+.edit-php .row-actions a:hover::before,
+.edit-comments-php .row-actions a:hover::before,
+.plugins-php .row-actions a:hover::before,
+.users-php .row-actions a:hover::before,
+.upload-php .row-actions a:hover::before {
+  color: white;
+}
+.edit-php .row-actions a:hover::after,
+.edit-comments-php .row-actions a:hover::after,
+.plugins-php .row-actions a:hover::after,
+.users-php .row-actions a:hover::after,
+.upload-php .row-actions a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 15px);
+  top: 100%;
+  z-index: 5;
+}
+.edit-php .row-actions a::before,
+.edit-comments-php .row-actions a::before,
+.plugins-php .row-actions a::before,
+.users-php .row-actions a::before,
+.upload-php .row-actions a::before {
+  color: #02465C;
+  font-size: 20px;
+  position: absolute;
+  font-family: fontawesome;
+  transition: all 0.3s;
+  width: 100%;
+  text-align: center;
+}
+.edit-php .row-actions .more a::before,
+.edit-comments-php .row-actions .more a::before,
+.plugins-php .row-actions .more a::before,
+.users-php .row-actions .more a::before,
+.upload-php .row-actions .more a::before {
+  content: "\f141";
+}
+.edit-php .row-actions .delete a,
+.edit-php .row-actions .trash a,
+.edit-php .row-actions .spam a,
+.edit-comments-php .row-actions .delete a,
+.edit-comments-php .row-actions .trash a,
+.edit-comments-php .row-actions .spam a,
+.plugins-php .row-actions .delete a,
+.plugins-php .row-actions .trash a,
+.plugins-php .row-actions .spam a,
+.users-php .row-actions .delete a,
+.users-php .row-actions .trash a,
+.users-php .row-actions .spam a,
+.upload-php .row-actions .delete a,
+.upload-php .row-actions .trash a,
+.upload-php .row-actions .spam a {
+  border: 1px solid #c0392b;
+}
+.edit-php .row-actions .delete a:hover,
+.edit-php .row-actions .trash a:hover,
+.edit-php .row-actions .spam a:hover,
+.edit-comments-php .row-actions .delete a:hover,
+.edit-comments-php .row-actions .trash a:hover,
+.edit-comments-php .row-actions .spam a:hover,
+.plugins-php .row-actions .delete a:hover,
+.plugins-php .row-actions .trash a:hover,
+.plugins-php .row-actions .spam a:hover,
+.users-php .row-actions .delete a:hover,
+.users-php .row-actions .trash a:hover,
+.users-php .row-actions .spam a:hover,
+.upload-php .row-actions .delete a:hover,
+.upload-php .row-actions .trash a:hover,
+.upload-php .row-actions .spam a:hover {
+  background-color: #c0392b;
+}
+.edit-php .row-actions .delete a:hover::before,
+.edit-php .row-actions .trash a:hover::before,
+.edit-php .row-actions .spam a:hover::before,
+.edit-comments-php .row-actions .delete a:hover::before,
+.edit-comments-php .row-actions .trash a:hover::before,
+.edit-comments-php .row-actions .spam a:hover::before,
+.plugins-php .row-actions .delete a:hover::before,
+.plugins-php .row-actions .trash a:hover::before,
+.plugins-php .row-actions .spam a:hover::before,
+.users-php .row-actions .delete a:hover::before,
+.users-php .row-actions .trash a:hover::before,
+.users-php .row-actions .spam a:hover::before,
+.upload-php .row-actions .delete a:hover::before,
+.upload-php .row-actions .trash a:hover::before,
+.upload-php .row-actions .spam a:hover::before {
+  color: white;
+}
+.edit-php .row-actions .unapprove a,
+.edit-comments-php .row-actions .unapprove a,
+.plugins-php .row-actions .unapprove a,
+.users-php .row-actions .unapprove a,
+.upload-php .row-actions .unapprove a {
+  border: 1px solid orange;
+}
+.edit-php .row-actions .unapprove a:hover,
+.edit-comments-php .row-actions .unapprove a:hover,
+.plugins-php .row-actions .unapprove a:hover,
+.users-php .row-actions .unapprove a:hover,
+.upload-php .row-actions .unapprove a:hover {
+  background-color: orange;
+}
+.edit-php .row-actions .unapprove a:hover::before,
+.edit-comments-php .row-actions .unapprove a:hover::before,
+.plugins-php .row-actions .unapprove a:hover::before,
+.users-php .row-actions .unapprove a:hover::before,
+.upload-php .row-actions .unapprove a:hover::before {
+  color: white;
+}
+.edit-php .row-actions .delete a::before,
+.edit-php .row-actions .trash a::before,
+.edit-comments-php .row-actions .delete a::before,
+.edit-comments-php .row-actions .trash a::before,
+.plugins-php .row-actions .delete a::before,
+.plugins-php .row-actions .trash a::before,
+.users-php .row-actions .delete a::before,
+.users-php .row-actions .trash a::before,
+.upload-php .row-actions .delete a::before,
+.upload-php .row-actions .trash a::before {
+  content: "\f014";
+  color: #c0392b;
+}
+.edit-php .row-actions .edit a::before,
+.edit-comments-php .row-actions .edit a::before,
+.plugins-php .row-actions .edit a::before,
+.users-php .row-actions .edit a::before,
+.upload-php .row-actions .edit a::before {
+  content: "\f040";
+}
+.edit-php .row-actions .inline a::before,
+.edit-php .row-actions .quickedit a::before,
+.edit-comments-php .row-actions .inline a::before,
+.edit-comments-php .row-actions .quickedit a::before,
+.plugins-php .row-actions .inline a::before,
+.plugins-php .row-actions .quickedit a::before,
+.users-php .row-actions .inline a::before,
+.users-php .row-actions .quickedit a::before,
+.upload-php .row-actions .inline a::before,
+.upload-php .row-actions .quickedit a::before {
+  content: "\f044";
+}
+.edit-php .row-actions .view a::before,
+.edit-comments-php .row-actions .view a::before,
+.plugins-php .row-actions .view a::before,
+.users-php .row-actions .view a::before,
+.upload-php .row-actions .view a::before {
+  content: "\f06e";
+}
+.edit-php .row-actions .deactivate a::before,
+.edit-comments-php .row-actions .deactivate a::before,
+.plugins-php .row-actions .deactivate a::before,
+.users-php .row-actions .deactivate a::before,
+.upload-php .row-actions .deactivate a::before {
+  content: "\f070";
+}
+.edit-php .row-actions .activate a::before,
+.edit-comments-php .row-actions .activate a::before,
+.plugins-php .row-actions .activate a::before,
+.users-php .row-actions .activate a::before,
+.upload-php .row-actions .activate a::before {
+  content: "\f06e";
+}
+.edit-php .row-actions .unapprove a::before,
+.edit-comments-php .row-actions .unapprove a::before,
+.plugins-php .row-actions .unapprove a::before,
+.users-php .row-actions .unapprove a::before,
+.upload-php .row-actions .unapprove a::before {
+  content: "\f05e";
+}
+.edit-php .row-actions .approve a::before,
+.edit-comments-php .row-actions .approve a::before,
+.plugins-php .row-actions .approve a::before,
+.users-php .row-actions .approve a::before,
+.upload-php .row-actions .approve a::before {
+  content: "\f05d";
+}
+.edit-php .row-actions .reply a::before,
+.edit-comments-php .row-actions .reply a::before,
+.plugins-php .row-actions .reply a::before,
+.users-php .row-actions .reply a::before,
+.upload-php .row-actions .reply a::before {
+  content: "\f112";
+}
+.edit-php .row-actions .spam a::before,
+.edit-comments-php .row-actions .spam a::before,
+.plugins-php .row-actions .spam a::before,
+.users-php .row-actions .spam a::before,
+.upload-php .row-actions .spam a::before {
+  content: "\f071";
+  color: #c0392b;
+}
+.edit-php .plugin-version-author-uri i,
+.edit-comments-php .plugin-version-author-uri i,
+.plugins-php .plugin-version-author-uri i,
+.users-php .plugin-version-author-uri i,
+.upload-php .plugin-version-author-uri i {
+  color: #7b96a3;
+  margin-right: 3px;
+}
+.edit-tags-php .search-form {
+  position: relative;
+}
+.edit-tags-php .tablenav .tablenav-pages {
+  float: left;
+}
+.edit-tags-php p.search-box {
+  position: absolute;
+  right: 5px;
+  top: 11px;
+}
+.theme-editor-php .wrap {
+  padding: 0;
+}
+.theme-editor-php #template {
+  width: calc(100% - 190px);
+  padding: 0;
+}
+.theme-editor-php #template div {
+  margin-right: 0;
+}
+.theme-editor-php #templateside {
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.theme-editor-php #templateside h2 {
+  padding: 3px 15px 10px 3px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.theme-editor-php #templateside li {
+  border-radius: 5px;
+  margin-bottom: 2px;
+  transition: all 0.4s;
+}
+.theme-editor-php #templateside li:hover,
+.theme-editor-php #templateside .highlight {
+  background-color: #D6EFFF;
+}
+.search-box #search-submit {
+  border: 1px solid #7b96a3;
+  border-radius: 0 5px 5px 0;
+  box-shadow: initial;
+  height: 35px;
+  left: 0;
+  line-height: 2;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  text-indent: -9999px;
+  width: 35px;
+  transition: all 0.4s;
+  background-color: transparent;
+}
+p.search-box {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+p.search-box::before {
+  display: inline-block;
+  font-family: dashicons;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: inherit;
+  vertical-align: top;
+  content: "\f179";
+  position: absolute;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #7b96a3;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+.search-box input[name="s"],
+.tablenav .search-plugins input[name="s"],
+.tagsdiv .newtag {
+  border: 1px solid #7b96a3;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+  float: left;
+  font-size: 13px;
+  height: 35px;
+  padding: 10px;
+  position: relative;
+  right: -5px;
+  width: 200px;
+}
+table.fixed {
+  border: 1px solid #7b96a3;
+  border-radius: 3px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+th.sortable a span,
+th.sorted a span {
+  font-size: 14px;
+}
+.widefat tfoot .comment-grey-bubble::before,
+.widefat thead .comment-grey-bubble::before {
+  color: #0d1012;
+}
+.widefat tfoot span,
+.widefat thead a {
+  color: #0d1012;
+}
+.widefat tfoot tr td,
+.widefat tfoot tr th,
+.widefat thead tr td,
+.widefat thead tr th {
+  background-color: #7b96a3;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #0d1012;
+}
+.wp-core-ui .button {
+  background: #99aeb8 none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #7b96a3;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #37474e;
+  border-bottom: 2px solid #7b96a3;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+  height: auto;
+}
+.wp-core-ui .button:hover {
+  background-color: #8aa2ae;
+  border-color: #6c8a99;
+  box-shadow: inset 0 -2px #6c8a99;
+  color: #fff;
+}
+.wp-core-ui .button span,
+.wp-core-ui .button span::before {
+  color: #fff;
+  text-shadow: 0 1px 2px #37474e;
+}
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+  padding: 3px 35px;
+  height: auto;
+}
+.wp-core-ui .button-secondary {
+  height: auto;
+  background: #99aeb8 none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #7b96a3;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #37474e;
+  border-bottom: 2px solid #7b96a3;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+}
+.wp-core-ui .button-secondary:hover {
+  background-color: #8aa2ae;
+  border-color: #6c8a99;
+  box-shadow: inset 0 -2px #6c8a99;
+  color: #fff;
+}
+.wp-core-ui .button-secondary span,
+.wp-core-ui .button-secondary span::before {
+  color: #fff;
+  text-shadow: 0 1px 2px #37474e;
+}
+.wp-core-ui .button-primary {
+  background: #7b96a3 none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #617d8a;
+  color: #0d1012;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #222c30;
+  border-bottom: 2px solid #617d8a;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+}
+.wp-core-ui .button-primary:hover {
+  background-color: #6c8a99;
+  border-color: #566f7b;
+  box-shadow: inset 0 -2px #566f7b;
+  color: #0d1012;
+}
+.wp-core-ui .button-primary span,
+.wp-core-ui .button-primary span::before {
+  color: #0d1012;
+  text-shadow: 0 1px 2px #222c30;
+}
+.button-cancel {
+  background: #e74c3c none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #d62c1a;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #4d100a;
+  border-bottom: 2px solid #d62c1a;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+  margin: 0 4px;
+  padding: 2px 5px;
+}
+.button-cancel:hover {
+  background-color: #e43725;
+  border-color: #bf2718;
+  box-shadow: inset 0 -2px #bf2718;
+  color: #fff;
+}
+.button-cancel span,
+.button-cancel span::before {
+  color: #fff;
+  text-shadow: 0 1px 2px #4d100a;
+}
+input[type="text"],
+input[type="search"],
+input[type="radio"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[type="password"],
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+select,
+textarea {
+  background-color: #fff;
+  border: 1px solid #8d969c;
+  box-shadow: initial;
+  color: #32373c;
+  outline: 0 none;
+  padding: 7px 15px;
+  transition: all 0.5s ease 0s;
+}
+.form-table p.description {
+  font-size: 11px;
+}
+input.code {
+  padding: 7px 15px;
+}
+input.small-text {
+  padding: 1px 6px;
+  width: 65px;
+}
+.options-general-php .wrap,
+.options-writing-php .wrap,
+.options-reading-php .wrap,
+.options-discussion-php .wrap,
+.options-permalink-php .wrap,
+.options-media-php .wrap,
+.profile-php .wrap,
+.update-core-php .wrap,
+.user-new-php .wrap {
+  background-color: white;
+  border: 1px solid #7b96a3;
+  border-radius: 5px;
+  padding: 0;
+  width: 70%;
+}
+.options-general-php .wrap h1,
+.options-writing-php .wrap h1,
+.options-reading-php .wrap h1,
+.options-discussion-php .wrap h1,
+.options-permalink-php .wrap h1,
+.options-media-php .wrap h1,
+.profile-php .wrap h1,
+.update-core-php .wrap h1,
+.user-new-php .wrap h1 {
+  background-color: #7b96a3;
+  color: white;
+  padding: 20px 15px;
+  font-size: 27px;
+}
+.options-general-php form,
+.options-general-php p,
+.options-general-php h2,
+.options-writing-php form,
+.options-writing-php p,
+.options-writing-php h2,
+.options-reading-php form,
+.options-reading-php p,
+.options-reading-php h2,
+.options-discussion-php form,
+.options-discussion-php p,
+.options-discussion-php h2,
+.options-permalink-php form,
+.options-permalink-php p,
+.options-permalink-php h2,
+.options-media-php form,
+.options-media-php p,
+.options-media-php h2,
+.profile-php form,
+.profile-php p,
+.profile-php h2,
+.update-core-php form,
+.update-core-php p,
+.update-core-php h2,
+.user-new-php form,
+.user-new-php p,
+.user-new-php h2 {
+  padding: 0 10px;
+}
+.options-general-php th,
+.options-writing-php th,
+.options-reading-php th,
+.options-discussion-php th,
+.options-permalink-php th,
+.options-media-php th,
+.profile-php th,
+.update-core-php th,
+.user-new-php th {
+  color: #777;
+  cursor: pointer;
+  text-align: right;
+}
+.options-general-php .title,
+.options-writing-php .title,
+.options-reading-php .title,
+.options-discussion-php .title,
+.options-permalink-php .title,
+.options-media-php .title,
+.profile-php .title,
+.update-core-php .title,
+.user-new-php .title {
+  border-bottom: 1px dashed black;
+  padding-bottom: 7px;
+}
+.nav-menus-php {
+  /* Delete and cancel buttons at the bottom of the menu*/
+}
+.nav-menus-php #nav-menus-frame {
+  background-color: white;
+  float: right;
+  margin-left: 0;
+  margin-top: 0;
+  overflow: hidden;
+  padding-top: 23px;
+  position: relative;
+  width: 100%;
+}
+.nav-menus-php #menu-management-liquid {
+  float: right;
+  margin-top: 3px;
+  min-width: initial;
+  width: calc(100% - 300px);
+}
+.nav-menus-php #menu-management {
+  box-sizing: border-box;
+  margin-right: 0;
+  width: calc(100% - 15px);
+}
+.nav-menus-php #wpbody-content #menu-settings-column {
+  box-sizing: border-box;
+  margin-left: 0;
+  padding: 10px;
+  z-index: 1;
+}
+.nav-menus-php .accordion-section-content,
+.nav-menus-php .accordion-section-title {
+  border-color: transparent;
+}
+.nav-menus-php .accordion-section-title:focus::after,
+.nav-menus-php .accordion-section-title:hover::after {
+  border-color: transparent;
+}
+.nav-menus-php .control-section .accordion-section-title {
+  background: transparent;
+}
+.nav-menus-php #menu-settings-column .accordion-container {
+  border: initial;
+  box-shadow: initial;
+}
+.nav-menus-php #nav-menus-frame #menu-settings-column::before {
+  position: absolute;
+  background: -moz-linear-gradient(right,#f2f2f2 0%,rgba(255,255,255,0.1) 9%,rgba(255,255,255,0) 10%);
+  background: -webkit-linear-gradient(right,#f2f2f2 0%,rgba(255,255,255,0.1) 9%,rgba(255,255,255,0) 10%);
+  background: linear-gradient(to left,#f2f2f2 0%,rgba(255,255,255,0.1) 9%,rgba(255,255,255,0) 10%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',endColorstr='#00ffffff',GradientType=1);
+  top: -30px;
+  bottom: -30px;
+  left: 5px;
+  width: 280px;
+  content: "";
+}
+.nav-menus-php .wrap h2.nav-tab-wrapper {
+  margin: 20px 0 0 0;
+  position: relative;
+  top: 1px;
+  z-index: 1;
+  border-bottom: 3px solid #7b96a3;
+}
+.nav-menus-php .wrap h2.nav-tab-wrapper a {
+  background-color: #7b96a3;
+  border: 2px solid #7b96a3;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  padding: 4px 10px;
+  float: left;
+  transition: background-color 0.4s;
+}
+.nav-menus-php .wrap h2.nav-tab-wrapper a:not(.nav-tab-active):hover {
+  background-color: #00b3ec;
+}
+.nav-menus-php .wrap h2.nav-tab-wrapper a.nav-tab-active {
+  border: 2px solid #7b96a3;
+  transition: all 0.3s;
+  background-color: white;
+  color: #7b96a3;
+  font-weight: bold;
+  position: relative;
+}
+.nav-menus-php .wrap h2.nav-tab-wrapper a.nav-tab-active::after {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -5px;
+  height: 10px;
+  content: "";
+}
+.nav-menus-php .manage-menus {
+  background: #fff none repeat scroll 0 0;
+  border-width: 0 0 1px;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+.nav-menus-php .menu-item-handle,
+.nav-menus-php .widget .widget-top {
+  background: #7b96a3 none repeat scroll 0 0;
+  color: white;
+  border: 1px solid #7b96a3;
+}
+.nav-menus-php .menu-item-handle .item-type,
+.nav-menus-php .menu-item-handle .menu-item-title.no-title,
+.nav-menus-php .menu-item-handle .is-submenu,
+.nav-menus-php .widget .widget-top .item-type,
+.nav-menus-php .widget .widget-top .menu-item-title.no-title,
+.nav-menus-php .widget .widget-top .is-submenu {
+  color: white;
+}
+.nav-menus-php .item-edit::before {
+  color: white;
+}
+.nav-menus-php .menu-item-settings {
+  border-color: #7b96a3;
+}
+.nav-menus-php .menu-item-actions .item-delete,
+.nav-menus-php .menu-item-actions .item-cancel {
+  /*border-radius: 0;
+			box-shadow: initial;
+			color: #fff;
+			text-decoration: none;
+			text-shadow: initial;
+			transition: background-color 0.4s ease 0s;
+			padding: 5px 15px;
+			border: 1px solid;*/
+}
+.nav-menus-php .menu-item-actions .meta-sep {
+  display: none;
+}
+.nav-menus-php .menu-item-actions .item-delete {
+  background: #c0392b none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #962d22;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #190806;
+  border-bottom: 2px solid #962d22;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+  padding: 5px 15px;
+}
+.nav-menus-php .menu-item-actions .item-delete:hover {
+  background-color: #ab3326;
+  border-color: #81261d;
+  box-shadow: inset 0 -2px #81261d;
+  color: white;
+}
+.nav-menus-php .menu-item-actions .item-delete span,
+.nav-menus-php .menu-item-actions .item-delete span::before {
+  color: white;
+  text-shadow: 0 1px 2px #190806;
+}
+.nav-menus-php .menu-item-actions .item-cancel {
+  background: #7b96a3 none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #617d8a;
+  color: #0d1012;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #222c30;
+  border-bottom: 2px solid #617d8a;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+  padding: 5px 15px;
+}
+.nav-menus-php .menu-item-actions .item-cancel:hover {
+  background-color: #6c8a99;
+  border-color: #566f7b;
+  box-shadow: inset 0 -2px #566f7b;
+  color: #0d1012;
+}
+.nav-menus-php .menu-item-actions .item-cancel span,
+.nav-menus-php .menu-item-actions .item-cancel span::before {
+  color: #0d1012;
+  text-shadow: 0 1px 2px #222c30;
+}
+.widgets-php div#widgets-left {
+  background-color: white;
+  border: 1px solid #235471;
+  border-radius: 3px;
+  margin: 15px 0;
+  padding: 15px;
+}
+.widgets-php .alignleft {
+  display: flex;
+}
+.widgets-php .widget-control-remove,
+.widgets-php .widget-control-close {
+  border-radius: 0;
+  box-shadow: initial;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: initial;
+  transition: background-color 0.4s ease 0s;
+  padding: 5px 15px;
+  padding: initial;
+  height: 25px;
+  line-height: 25px;
+  width: 55px;
+  display: block;
+}
+.widgets-php .widget-control-remove {
+  background: #c0392b none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #962d22;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #190806;
+  border-bottom: 2px solid #962d22;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+  padding: initial;
+}
+.widgets-php .widget-control-remove:hover {
+  background-color: #ab3326;
+  border-color: #81261d;
+  box-shadow: inset 0 -2px #81261d;
+  color: white;
+}
+.widgets-php .widget-control-remove span,
+.widgets-php .widget-control-remove span::before {
+  color: white;
+  text-shadow: 0 1px 2px #190806;
+}
+.widgets-php .widget-control-remove:hover {
+  background-color: #d14233;
+}
+.widgets-php .widget-control-close {
+  background: #7b96a3 none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: inset 0 -2px #617d8a;
+  color: #0d1012;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-shadow: 0 1px 2px #222c30;
+  border-bottom: 2px solid #617d8a;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 0px 15px;
+  padding: initial;
+}
+.widgets-php .widget-control-close:hover {
+  background-color: #6c8a99;
+  border-color: #566f7b;
+  box-shadow: inset 0 -2px #566f7b;
+  color: #0d1012;
+}
+.widgets-php .widget-control-close span,
+.widgets-php .widget-control-close span::before {
+  color: #0d1012;
+  text-shadow: 0 1px 2px #222c30;
+}
+.widgets-php .widget-control-close:hover {
+  background-color: #4aa3df;
+}
+#adminmenumain #adminmenu,
+#adminmenumain #adminmenu .wp-submenu {
+  background-color: transparent;
+  width: 160px;
+}
+#adminmenumain #adminmenuwrap {
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 180px;
+  left: 0;
+  transition: all 0.3s;
+}
+#adminmenumain #adminmenuback {
+  background-color: #607d8b;
+  width: 180px;
+  left: 0;
+  transition: all 0.3s;
+}
+#adminmenumain #adminmenu {
+  margin-top: -35px;
+  /* Logo */
+  /** Sidebar Sub menu */
+}
+#adminmenumain #adminmenu div.wp-menu-image::before {
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+#adminmenumain #adminmenu li {
+  transition: all 0.4s;
+}
+#adminmenumain #adminmenu a,
+#adminmenumain #adminmenu .wp-submenu a,
+#adminmenumain #adminmenu #collapse-button {
+  color: white;
+}
+#adminmenumain #adminmenu .wp-has-current-submenu .wp-submenu li:hover {
+  background-color: #41545e;
+}
+#adminmenumain #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover::after,
+#adminmenumain #adminmenu a.wp-has-current-submenu::after,
+#adminmenumain #adminmenu > li.current > a.current::after {
+  content: unset;
+}
+#adminmenumain #adminmenu .wp-submenu li {
+  position: relative;
+  margin: 2px 0;
+}
+#adminmenumain #adminmenu .wp-submenu li::before {
+  background-color: white;
+  content: " ";
+  height: 0;
+  left: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out 0s;
+  width: 2px;
+}
+#adminmenumain #adminmenu .wp-submenu li:hover {
+  background-color: #41545e;
+  border-radius: 2px;
+}
+#adminmenumain #adminmenu .wp-submenu li:hover::before {
+  height: 65%;
+}
+#adminmenumain #adminmenu .wp-submenu a:focus,
+#adminmenumain #adminmenu .wp-submenu a:hover,
+#adminmenumain #adminmenu a:hover,
+#adminmenumain #adminmenu li.menu-top > a:focus {
+  color: white;
+}
+#adminmenumain #adminmenu li.menu-top:not(#toplevel_page_admin_menu_logo):hover,
+#adminmenumain #adminmenu li.opensub > a.menu-top {
+  background-color: #4b626d;
+  color: white;
+}
+#adminmenumain #adminmenu #toplevel_page_admin_menu_logo img {
+  max-width: 100%;
+}
+#adminmenumain #adminmenu #toplevel_page_admin_menu_logo .wp-menu-image {
+  display: none;
+}
+#adminmenumain #adminmenu #toplevel_page_admin_menu_logo:hover {
+  background-color: initial;
+}
+#adminmenumain #adminmenu li > a.menu-top:focus {
+  background-color: initial;
+}
+#adminmenumain #adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenumain #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenumain #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+#adminmenumain #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+#adminmenumain #adminmenu .no-js li.wp-has-current-submenu:hover .wp-submenu {
+  background-color: #4b626d;
+}
+#adminmenumain #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenumain #adminmenu .wp-menu-arrow,
+#adminmenumain #adminmenu .wp-menu-arrow div,
+#adminmenumain #adminmenu li.current a.menu-top,
+#adminmenumain #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background: #41545e none repeat scroll 0 0;
+  color: #fff;
+}
+#adminmenumain #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover::after {
+  border-right-color: #0073aa;
+}
+#adminmenumain #adminmenu .awaiting-mod,
+#adminmenumain #adminmenu .update-plugins {
+  background-color: #d67622;
+  border-radius: 3px;
+  color: white;
+  float: right;
+  margin: 1px 10px 0 2px;
+}
+#adminmenumain #adminmenu li.wp-menu-separator {
+  background-color: white;
+  cursor: inherit;
+  height: 1px;
+  margin: 8px 0;
+}
+#adminmenumain #adminmenu li.menu-top {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  margin: 5px 0;
+}
+#adminmenumain #adminmenu .wp-submenu {
+  box-shadow: initial;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0 !important;
+  position: relative;
+  top: 0;
+  display: none;
+}
+#adminmenumain #adminmenu .wp-has-current-submenu .wp-submenu {
+  height: auto;
+  display: block;
+}
+#adminmenumain #adminmenu #toplevel_page_dashboard-brand {
+  margin-bottom: 15px;
+}
+.folded #adminmenumain #adminmenuwrap,
+.folded #adminmenumain #adminmenuback {
+  left: -190px;
+}
+.folded #adminmenu div.wp-menu-image {
+  position: initial;
+}
+.folded #adminmenu .wp-menu-name {
+  left: 0;
+  position: initial;
+}
+.folded #wpadminbar {
+  width: 100%;
+}
+.folded #adminmenu .wp-submenu-head {
+  display: none;
+}
+.folded li#wp-admin-bar-menu-toggle::before {
+  transform: rotate(180deg);
+  top: 5px !important;
+}
+.folded #wpcontent,
+.folded #wpfooter {
+  margin-left: 0;
+}
+#poststuff {
+  background-color: white;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+#poststuff #ed_toolbar input {
+  background-color: initial;
+  border: 1px solid;
+  box-shadow: initial;
+  color: initial;
+  text-shadow: initial;
+}
+#poststuff #postbox-container-1 #side-sortables {
+  padding: 10px;
+}
+#poststuff .columns-2 #postbox-container-1 #side-sortables::before {
+  position: absolute;
+  background: -moz-linear-gradient(left,#f2f2f2 0%,rgba(255,255,255,0.1) 9%,rgba(255,255,255,0) 10%);
+  background: -webkit-linear-gradient(left,#f2f2f2 0%,rgba(255,255,255,0.1) 9%,rgba(255,255,255,0) 10%);
+  background: linear-gradient(to right,#f2f2f2 0%,rgba(255,255,255,0.1) 9%,rgba(255,255,255,0) 10%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',endColorstr='#00ffffff',GradientType=1);
+  top: -30px;
+  bottom: -30px;
+  right: 0;
+  width: 280px;
+  content: "";
+}
+#poststuff .columns-2 #postbox-container-1 .postbox {
+  background: transparent none repeat scroll 0 0;
+  border: initial;
+  box-shadow: initial;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#poststuff #post-body-content {
+  box-sizing: border-box;
+  padding: 20px;
+}
+#poststuff #delete-action a {
+  background: #c0392b none repeat scroll 0 0;
+  border: 1px solid #8f0b0b;
+  border-radius: 0;
+  box-shadow: initial;
+  color: white;
+  font-size: 12px;
+  padding: 5px 7px;
+  text-decoration: none;
+  text-shadow: initial;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+#poststuff #delete-action a:hover {
+  opacity: 0.8;
+}
+#poststuff #major-publishing-actions {
+  background: transparent none repeat scroll 0 0;
+}
+#poststuff #publishing-action {
+  float: right;
+  line-height: 23px;
+  margin-top: 5px;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+#poststuff #publishing-action .spinner {
+  background: initial;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  animation: 1.5s linear 0s normal none infinite running spinner;
+  width: 36px;
+  height: 36px;
+  opacity: 1;
+  margin: 0;
+}
+#poststuff #publishing-action .spinner::before {
+  content: "";
+  font-family: fontawesome;
+  color: white;
+  transition: all 0.4s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 23px;
+}
+#poststuff #publish {
+  display: block;
+  width: 100%;
+}
+#poststuff #delete-action {
+  width: 100%;
+}
+#poststuff #titlediv #title {
+  height: auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  box-shadow: 0 0 20px #eaeaea inset;
+}
+#poststuff #wp-content-editor-tools {
+  background-color: #fff;
+}
+#poststuff .inside .tagsdiv .newtag {
+  width: calc(100% - 60px);
+  padding: 5px 10px;
+  height: 33px;
+  top: 1px;
+}
+#poststuff #post_tag .button.tagadd {
+  border: 1px solid;
+  border-radius: 0 5px 5px 0;
+  height: 35px;
+  padding: 0;
+  width: 50px;
+}
+#poststuff .postbox .inside,
+#poststuff .stuffbox .inside {
+  padding: 0 6px 12px;
+}
+#poststuff #postbox-container-2 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+#poststuff #misc-publishing-actions {
+  float: left;
+  font-size: 11px;
+}
+#poststuff .misc-pub-section {
+  box-sizing: border-box;
+  float: left;
+  padding: 6px 10px 8px;
+  width: 100%;
+}
+#poststuff .misc-pub-section a {
+  float: right;
+}
+#poststuff .misc-pub-section::before {
+  color: #717171;
+  font-size: 18px;
+  line-height: 20px;
+}
+#poststuff #post-body .misc-pub-post-status::before {
+  color: #717171;
+  content: "";
+  font-size: 18px;
+  line-height: 20px;
+}
+.notice,
+div.error,
+div.updated,
+div.error {
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px 1px 1px 4px;
+  box-shadow: initial;
+}
+.notice-warning {
+  border-color: #cbaf63;
+}
+.notice-success,
+div.updated {
+  background-color: #dff0d8;
+  border-color: #46b450;
+}
+.notice-error,
+div.error {
+  border-color: #a94442;
+  background-color: #f2dede;
+}
+#wpadminbar {
+  left: initial;
+  right: 0;
+  width: calc(100% - 180px);
+  height: 45px;
+  background-color: #607d8b;
+  transition: all 0.3s;
+}
+#wpadminbar #wp-admin-bar-my-account.with-avatar > a img {
+  height: auto;
+  margin: -4px 6px 0 0;
+  width: 26px;
+}
+#wp-toolbar > ul > li {
+  padding: 7px 0;
+}
+#wpadminbar a {
+  color: white !important;
+}
+#wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label,
+#wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
+#wpadminbar > #wp-toolbar li.hover span.ab-label {
+  color: white;
+  transition: all 0.1s ease-in-out 0s;
+}
+#wpadminbar .ab-top-menu > li.hover > .ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
+  background: #4b626d none repeat scroll 0 0;
+  color: #607d8b;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out 0s;
+}
+#wpadminbar #adminbarsearch::before,
+#wpadminbar .ab-icon::before,
+#wpadminbar .ab-item::before {
+  color: white;
+}
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus,
+#wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover,
+#wpadminbar li #adminbarsearch.adminbar-focused::before,
+#wpadminbar li .ab-item:focus .ab-icon::before,
+#wpadminbar li .ab-item:focus::before,
+#wpadminbar li a:focus .ab-icon::before,
+#wpadminbar li.hover .ab-icon::before,
+#wpadminbar li.hover .ab-item::before,
+#wpadminbar li:hover #adminbarsearch::before,
+#wpadminbar li:hover .ab-icon::before,
+#wpadminbar li:hover .ab-item::before,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
+  color: white;
+}
+#wpadminbar {
+  /** Submenu */
+}
+#wpadminbar #wp-admin-bar-top-secondary {
+  display: flex;
+  padding: 6px 0;
+}
+#wpadminbar #wp-admin-bar-top-secondary li {
+  padding: 0 3px;
+}
+#wpadminbar #wp-admin-bar-kalimah-logout a,
+#wpadminbar #wp-admin-bar-kalimah-settings a {
+  width: 35px;
+}
+#wpadminbar #wp-admin-bar-kalimah-logout a::before,
+#wpadminbar #wp-admin-bar-kalimah-settings a::before {
+  color: white;
+  font-family: fontawesome;
+  font-size: 20px;
+  height: 100%;
+  left: 0;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+#wpadminbar #wp-admin-bar-kalimah-logout a::before {
+  content: "\f08b";
+}
+#wpadminbar #wp-admin-bar-kalimah-settings a::before {
+  content: "\f013";
+}
+#wpadminbar #wp-admin-bar-user-info .display-name,
+#wpadminbar #wp-admin-bar-user-info .username {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+#wpadminbar #wp-admin-bar-user-info .avatar {
+  border-radius: 3px;
+  height: 30px;
+  left: 0;
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+  width: auto;
+}
+#wpadminbar #wp-admin-bar-top-secondary > li .ab-item::after {
+  background-color: #99aeb8;
+  border-radius: 5px;
+  color: #fff;
+  content: attr(title);
+  font-size: 12px;
+  height: auto;
+  left: 50%;
+  opacity: 0;
+  padding: 0 16px;
+  position: absolute;
+  text-align: center;
+  top: -9000px;
+  transform: translate(-50%, 15px);
+  transition: opacity 0.4s ease 0s, transform 0.4s;
+}
+#wpadminbar #wp-admin-bar-top-secondary > li .ab-item:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 5px);
+  top: 100%;
+}
+#wpadminbar #wp-admin-bar-root-default > li > .ab-sub-wrapper {
+  border-radius: 2px;
+  left: 50%;
+  min-width: 100%;
+  opacity: 0;
+  top: -900px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+  display: block;
+  background-color: #99aeb8;
+  color: #fff;
+}
+#wpadminbar #wp-admin-bar-root-default > li > .ab-sub-wrapper li {
+  transition: all 0.4s;
+}
+#wpadminbar #wp-admin-bar-root-default > li > .ab-sub-wrapper li:hover > a {
+  background-color: #a5b8c0;
+  color: #fff;
+}
+#wpadminbar #wp-admin-bar-root-default > li > .ab-sub-wrapper .ab-submenu {
+  background-color: #99aeb8;
+  color: #fff;
+  padding: 5px;
+  margin-left: 0;
+}
+#wpadminbar ul#wp-admin-bar-root-default > li.menupop.hover > .ab-sub-wrapper {
+  top: 55px;
+  opacity: 1;
+  transform: translate(-50%,-13px);
+}
+#wpadminbar li#wp-admin-bar-menu-toggle {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  margin-left: 5px !important;
+  margin-right: 13px !important;
+  width: 35px;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+#wpadminbar li#wp-admin-bar-menu-toggle::before {
+  color: white;
+  content: "";
+  font-family: dashicons;
+  font-size: 25px;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  top: 8px;
+  transition: all 0.4s ease 0s;
+  width: 35px;
+}
+#wpadminbar li#wp-admin-bar-menu-toggle.hide {
+  width: 0;
+}
+#wpadminbar #wp-admin-bar-updates .screen-reader-text,
+#wpadminbar #wp-admin-bar-comments .screen-reader-text {
+  background-color: #99aeb8;
+  color: #fff;
+  border-radius: 6px;
+  clip: initial;
+  display: table;
+  font-size: 12px;
+  height: auto;
+  left: 50%;
+  overflow: initial;
+  padding: 5px 10px;
+  position: absolute;
+  top: -1000px;
+  transform: translate(-50%, 15px);
+  text-align: center;
+  transition: opacity 0.4s, transform 0.4s;
+  opacity: 0;
+  white-space: nowrap;
+}
+#wpadminbar #wp-admin-bar-updates a:hover .screen-reader-text,
+#wpadminbar #wp-admin-bar-comments a:hover .screen-reader-text {
+  top: 100%;
+  opacity: 1;
+  transform: translate(-50%, 5px);
+}
+#screen-meta-links .screen-meta-toggle {
+  top: 20px;
+}
+#screen-meta-links .show-settings {
+  color: transparent;
+  font-size: 0;
+  height: 30px;
+  overflow: hidden;
+  padding: 0;
+  width: 35px;
+  box-shadow: initial;
+  text-shadow: initial;
+}
+#screen-meta-links .show-settings::after {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: gray;
+  transition: all 0.4s;
+}
+#screen-meta-links .show-settings:hover::after {
+  color: black;
+}
+#screen-meta-links .show-settings#show-settings-link::after {
+  content: "";
+}
+#screen-meta-links .show-settings#contextual-help-link::after {
+  content: "\f468";
+}
+#contextual-help-link-wrap,
+#screen-options-link-wrap {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none transparent;
+  box-shadow: initial;
+  padding: 0;
+}
+#screen-meta {
+  border: 1px solid #c9c4c4;
+  border-radius: 3px;
+  overflow: hidden;
+  transform: translateY(15px);
+}
+#screen-options-wrap #adv-settings fieldset {
+  background-color: #fcfcfc;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 1%;
+  padding: 20px 10px;
+  width: 49%;
+}
+#screen-options-wrap #adv-settings p.submit {
+  display: block;
+  float: left;
+  margin: 5px 0 15px;
+  text-align: center;
+  width: 100%;
+}
+#screen-options-wrap legend {
+  font-size: 14px;
+  padding: 5px 6px 10px;
+  color: #8f8f8f;
+}
+#screen-options-wrap #screen-options-apply {
+  padding: 0px 25px;
+}
+#screen-options-wrap .screen-per-page {
+  margin-right: 15px;
+  padding: 3px;
+}
+#collapse-menu {
+  display: none;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

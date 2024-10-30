@@ -1,0 +1,244 @@
+#kalimah-admin-settings
+{
+	.flat_colors
+	{
+		label
+		{
+			display: block;
+			float: left;
+			height: 100px;
+			width: 100px;
+			position: relative;
+		}
+		
+		input[type="radio"]
+		{
+			display: none;
+		}
+		
+		label::before {
+			opacity: 0;
+			transition: 0.3s;
+			bottom: 0;
+		  color: white;
+		  content: "";
+		  font-family: fontawesome;
+		  font-size: 27px;
+		  position: absolute;
+		  left: 0px;
+		  width: 100%; 
+		  height: 100%;
+		  text-align: center;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  text-align: center;
+		}
+		
+		input[type="radio"]:checked + label::before {
+		  opacity: 1;
+		}
+		
+		.first_color
+		{
+			background-color: #16a085;
+		}
+
+		.second_color
+		{
+			background-color: #2980b9;
+		}
+
+		.third_color
+		{
+			background-color: #8e44ad;
+		}
+		
+		.fourth_color
+		{
+			background-color: #263849;
+		}
+
+		.fifth_color
+		{
+			background-color: #da751c;
+		}
+	}
+	
+	.material_colors
+	{
+		label
+		{
+			display: block;
+			float: left;
+			height: 100px;
+			width: 100px;
+			position: relative;
+		}
+		
+		input[type="radio"]
+		{
+			display: none;
+		}
+		
+		label::before {
+			opacity: 0;
+			transition: 0.3s;
+			bottom: 0;
+		  color: white;
+		  content: "";
+		  font-family: fontawesome;
+		  font-size: 27px;
+		  position: absolute;
+		  left: 0px;
+		  width: 100%;
+		  height: 100%;
+		  text-align: center;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  text-align: center;
+		} 
+		
+		input[type="radio"]:checked + label::before {
+		  opacity: 1;
+		} 
+		 
+		.first_color
+		{
+			background-color: #607D8B;
+		}
+
+		.second_color
+		{
+			background-color: #FF9800;
+		}
+
+		.third_color
+		{
+			background-color: #009688;
+		}
+		
+		.fourth_color
+		{
+			background-color: #CDDC39;
+		}
+
+		.fifth_color
+		{
+			background-color: #673AB7;
+		}
+		
+		.sixth_color
+		{
+			background-color: #795548;
+		}
+	}
+	
+	.upload_image {
+	  border: 1px solid gray;
+	  border-radius: 5px;
+	  overflow: hidden;
+	  float: left;
+	  width: 250px;
+	  height: 150px;
+	  
+		.kalimah_admin_upload_actions 
+		{
+			float: right;
+			display: flex;
+			flex-direction: column;
+			width: 50px;
+			height: 100%;
+			
+			div {
+			 
+			  cursor: pointer;
+			  float: left;
+			  height: 50%;
+			  position: relative;
+			  width: 100%;
+			  background-color: #D5D5D5;
+			  transition: all 0.4s;
+			  box-sizing: border-box;
+			  
+			  &:hover
+			  {
+				background-color: darken(#D5D5D5, 15%);
+			  }
+			  
+			  &::before
+			  {
+				display: flex;
+				flex-direction: column;
+				font-family: dashicons;
+				font-size: 25px;
+				height: 100%;
+				justify-content: center;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 100%;
+			  }
+			  
+			  &.kalimah_admin_upload_action
+			  {
+				 border-bottom: 1px solid gray;
+			  }
+			  &.kalimah_admin_upload_action::before
+			  {
+				content: "\f317";
+			  }
+			  
+			  &.kalimah_admin_delete_action
+			  {
+				background-color: #ff7373;
+				
+				&:hover
+				{
+					background-color: darken(#ff7373, 10%);
+				}
+			  }
+			  
+			  &.kalimah_admin_delete_action::before
+			  {
+				content: "\f182";
+				color: lighten(#ff7373, 50%);
+			  }
+			}
+		}
+	
+		.kalimah_admin_image_wrapper {
+			background-color: #eee;
+			border-right: 1px solid gray;
+			display: flex;
+			flex-direction: column;
+			float: left;
+			font-size: 40px;
+			height: 100%;
+			justify-content: center;
+			text-align: center;
+			width: ~"calc(100% - 50px)";
+			position: relative;
+			box-sizing: border-box;
+			 span
+			  {
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%;
+				  display: flex;
+				  flex-direction: column;
+				  justify-content: center;
+				  z-index: 0;
+			  }
+			  
+			   img {
+				  z-index: 3;
+				}
+		}
+	}
+	
+}

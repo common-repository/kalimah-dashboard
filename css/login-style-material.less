@@ -1,0 +1,185 @@
+body.login {
+  background-attachment: fixed;
+  background-image: url(@bg_url);
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+body.login div#login h1 a {
+  background-image: url(@logo);
+  background-size: contain;
+  height: 200px;
+  width: auto;
+}
+
+#login 
+{
+	 label[for="user_login"], label[for="user_pass"] {
+	  color: #72777c;
+	  float: left;
+	  font-size: 0;
+	  position: relative;
+	  width: 100%;
+	  
+	  &::before
+	  {
+		    border-radius: 2px 0 0 2px;
+			bottom: 5px;
+			color: #2c3e50;
+			display: flex;
+			flex-direction: column;
+			font-family: fontawesome;
+			font-size: 13px;
+			justify-content: center;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 5px;
+			width: 40px;
+	  }
+	}
+	
+	label[for="user_login"]::before
+	{
+		content: "\f007";
+	}
+	
+	label[for="user_pass"]::before
+	{
+		content: "\f084";
+	}
+	
+	#user_login, #user_pass {
+		background-color: white;
+		border-color: currentcolor currentcolor gray;
+		border-radius: 0;
+		border-style: none none solid;
+		border-width: 0 0 2px;
+		box-shadow: initial;
+		display: block;
+		float: left;
+		font-size: 15px;
+		margin: 5px 0 !important;
+		outline: medium none;
+		padding: 6px 5px 6px 50px;
+		width: 100%;
+		transition: all 0.4s;
+		
+		&:focus
+		{
+			border-bottom: 2px solid green;
+			outline: medium none;
+		}
+		&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			font-size: 14px;
+		}
+		&::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   font-size: 14px;
+		   opacity:  1;
+		}
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   font-size: 14px;
+		}
+	}
+	
+	.forgetmenot {
+	  padding: 10px 0;
+	}
+
+	form p.submit {
+	  display: block;
+	  width: 100%;
+	  border-top: 1px solid rgba(139, 139, 139, 0.36);
+	  margin: 35px 0 0;
+	  padding: 15px 0 0;
+	  float: right;
+	}
+	
+	form p {
+	  float: right;
+	  margin-bottom: 15px;
+	  width: 100%;
+	}
+
+	form p.submit > input {
+		background: unset;
+		border: unset;
+		box-shadow: initial;
+		color: #e37f00;
+		display: inline-block;
+		float: right;
+		font-size: 18px;
+		font-weight: 600;
+		height: auto;
+		padding: 8px 12px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.21);
+		text-transform: uppercase;
+		transition: all 0.4s ease 0s;
+		width: auto;
+		
+		&:hover
+		{
+			background-color: #eee;
+		}
+	}
+	
+	.forgetmenot {
+	  padding: 10px 0;
+	  width: 100%;
+	  
+	  label
+	  {
+		width: 100%;
+		display: block;
+	  }
+	}
+	
+	#backtoblog, #nav{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+		a {
+		  .button(@firstBgColor; @firstTextColor);
+		  width: 100%;
+		  height: 40px;
+		  line-height: 35px;
+		  box-sizing: border-box;
+		  display: block;
+		}
+	}
+	
+	form
+	{
+		background: white none repeat scroll 0 0;
+		border-radius: 2px;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+		margin-left: 0;
+		margin-top: 20px;
+		padding: 25px;
+	}
+}
+
+/* Funtions (Mixins) */
+.button(@bg; @color) {
+ background: @bg none repeat scroll 0 0;
+  border: 0 none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  color: @color;
+  padding: 0px 20px;
+  transition: all 0.4s ease 0s;
+  text-indent: 0;
+  
+  &:hover
+  {
+	  background: darken(@bg, 10%);
+	  color: lighten(@color, 10%);
+  }
+  
+  span, span::before
+  {
+	color: lighten(@color, 10%);
+	text-shadow: 0 1px 2px darken(@bg, 40%);
+  }
+}
